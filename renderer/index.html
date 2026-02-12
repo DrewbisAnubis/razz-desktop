@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Razz Desktop</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; }
+    #bar { padding: 10px; display: flex; gap: 10px; border-bottom: 1px solid #ddd; }
+    #path { flex: 1; opacity: 0.8; }
+    #editor { width: 100%; height: calc(100vh - 52px); border: 0; padding: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; outline: none; }
+  </style>
+</head>
+<body>
+  <div id="bar">
+    <button id="open">Open</button>
+    <button id="save">Save</button>
+    <button id="saveAs">Save As</button>
+    <div id="path">(no file)</div>
+  </div>
+
+  <textarea id="editor" spellcheck="false"></textarea>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
